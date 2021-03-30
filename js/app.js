@@ -1,99 +1,144 @@
-'use strict'
+'use strict';
 
-let userName=prompt('could you tell me your name ?');
-alert('welcome to my  page ' +userName);
-confirm('please answers qustions below');
+let userName = prompt('could you tell me your name ?');
+alert('welcome to my  page ' + userName);
 
-let puzzle=prompt('do you like puzzle?');
-puzzle=puzzle.toLocaleLowerCase();
-if(puzzle=='yes'||puzzle==='y'){
-    
-    alert('your answer is '+ puzzle+ '\n'+ 'right , You are puzzle master ');
+confirm('please answers qustions below y/yes or no/n');
+
+
+let puzzle = prompt('do I like puzzle?');
+// YES Yes yEs
+
+puzzle = puzzle.toLowerCase();
+
+if (puzzle === 'yes' || puzzle === 'y') {
+
+    alert('your answer is ' + puzzle + '\n' + 'right , I\'m are puzzle master ');
     //console.log('puzzle master');
-}else if(puzzle==='no'||puzzle==='n'){
+} else if (puzzle === 'no' || puzzle === 'n') {
     alert('get out of here');
     //console.log('get out of here');
 
-}
-alert('that sounds great');
+} else {
 
-let travel=prompt('do you like puzzle?');
-travel=travel.toLocaleLowerCase();
-if(travel=='yes'||travel==='y'){
-    alert('you are awesome');
+    alert('please answer with only yes/y or no/n with no spaces');
+
+}
+
+
+let travel = prompt('do I like Traveling?');
+
+travel = travel.toLowerCase();
+
+if (travel === 'yes' || travel === 'y') {
+    alert('correct, you are awesome');
     //console.log('you are awesome');
-}else if(travel==='no'||travel==='n'){
+} else if (travel === 'no' || travel === 'n') {
 
     alert('you should try travling');
     //console.log('you should try traveling');
 
-}else{
+} else {
 
-alert('this is amazing news');
+    alert('please answer with only yes/y or no/n with no spaces');
 
 }
 
 
-let age=prompt('do you think iam 10 years old?');
-age=age.toLowerCase();
+let age = prompt('do you think iam 10 years old?');
 
-if(age==='Yes'||age==='Y'){
-    alert('you are celever');
+age = age.toUpperCase();
+
+console.log(age);
+
+if (age === 'YES' || age === 'Y') {
+    alert('you are wrong, you should start counting');
+
+
     //console.log('you celver');
-}else if(age==='No'||age==='N'){
+} else if (age === 'NO' || age === 'N') {
 
-    alert('you are wrong');
+    alert('you are celever');
     //console.log('you are wrong');
 
-}else{
+} else {
 
-alert('you should start counting');
+    alert('please answer with only yes/y or no/n with no spaces');
 
 }
 
-let game=prompt('do you like video games?');
-game=game.toLocaleLowerCase();
-if(game=='yes'||game==='y'){
-    
-    alert('your answer is '+ game+ '\n'+ 'awesome , You are video game master ');
+
+
+
+let game = prompt('do I like video games?');
+
+game = game.toLowerCase();
+
+if (game === 'yes' || game === 'y') {
+
+    alert('your answer is ' + game + '\n' + 'correct , im a video game master ');
     //console.log('video game master');
-}else if(game==='no'||game==='n'){
-    alert('go try xbox');
+} else if (game === 'no' || game === 'n') {
+    alert('get out of here, I really like Xbox');
     //console.log('just give a try');
 
-}else{
-    alert('get out of here ');
+} else {
+    alert('please answer with only yes/y or no/n with no spaces');
 
 }
 
-let code=prompt('do you like coding?');
-code=code.toLocaleLowerCase();
-if(code=='yes'||code==='y'){
-    
-    alert('your answer is '+ code+ '\n'+ 'programming , You are programming master ');
+
+
+let code = prompt('do I like coding?');
+
+code = code.toLocaleLowerCase();
+
+if (code === 'yes' || code === 'y') {
+    alert('your answer is ' + code + '\n' + 'correct, im really intersted');
+
     //console.log('programming master');
-}else if(code==='no'||code==='n'){
-    alert('read js css html');
+
+} else if (code === 'no' || code === 'n') {
+
+    alert('wrong, I like coding');
     //console.log('you will change your mind');
 
+} else {
+    alert('please answer with only yes/y or no/n with no spaces');
+
 }
 
 
 
 
-let coin=confirm('What has a head and a tail but no body?');
-if(coin==='head'){
-    console.log('does it have a head?');
-}else{
-console.log('its a coin');
+
+let coin = prompt('What has a head and a tail but no body?');
+
+coin = coin.toLowerCase();
+
+if (coin === 'coin') {
+    alert('correct, your a genius');
+    // console.log('correct, your a genius');
+} else {
+    alert('its a coin');
+    // console.log('its a coin');
 }
 
 
-let fire=prompt(' If I drink, I die. If I eat, I’m fine. What am I?');
-ire=fire.toLocaleLowerCase();
-if(fire==='drink'){
- console.log('you are getting close');
-}else if(fire==='die'){
-    console.log('almost there!');
-}else{
+let fire = prompt(' If I drink, I die. If I eat, I’m fine. What am I?');
+fire = fire.toLocaleLowerCase();
+
+if (fire === 'drink') {
+    alert('you are getting close');
+    // console.log('you are getting close');
+} else if (fire === 'die') {
+    alert('almost there!');
+    // console.log('almost there!');
+} else if (fire === 'fire') {
+    alert('correct answer');
+    // console.log('correct answer');
+} else {
     alert('its fire');
+}
+
+alert('Thanks for playing ' + userName);
