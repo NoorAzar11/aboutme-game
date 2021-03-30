@@ -143,3 +143,69 @@ if (fire === 'drink') {
 
 alert('Thanks for playing ' + userName);
 
+//6th question :
+
+
+let score=0;
+
+let money=prompt('How much money do you have?' + '\n' + 'you have to guess between 1 to 10 '+ '\n' + 'you have 4 chances');
+
+for(let i=0;i<3;i++){
+
+console.log(score);
+    
+    if(money===8){
+       alert('you are right!');
+        score++;
+     console.log(score);
+      break;
+
+    }else if(money>8){
+
+       alert(' Too high' + '\n' + 'Try again');
+
+        money=prompt('You have to guess between 1 and 10');
+
+    }else if(money<8) {
+
+       alert(' Too low' + '\n' + 'Try again');
+
+        money=prompt('You have to guess between 1 and 10');
+
+    } else alert('You tried 4 time,so you falied ');{
+
+    }
+}  
+
+
+//7th question 
+
+let movie=['drama','action','animation'];
+
+for(let y=0;y<6;y++){
+
+    let guess= prompt('could you guess what my fav movie?! drama , action, or animation ?');
+
+    if (guess===movie[2])
+    {
+      alert('show my answer '+ guess+ '\n'+'you are right, animation is my favourite movie');
+
+      score++;
+
+      break;
+    }
+    else if(guess=== mydrink[0] || guess=== movie[1])
+
+    {
+        alert('show my answer '+ guess+'\n'+ 'you guessed it wrong try it again dude! ');
+}
+
+if (guess!== movie[0] || guess!== movie[1] || guess=== movie[2] )
+
+    {
+        alert(' your wrong again,get out of here ');
+    }
+    alert('Thanks for playing '  userName + '\n' +'Your score is '+ score+ ' from 6');
+}
+
+
