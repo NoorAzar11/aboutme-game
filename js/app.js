@@ -142,3 +142,4 @@ if (fire === 'drink') {
 }
 
 alert('Thanks for playing ' + userName);
+
