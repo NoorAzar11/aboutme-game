@@ -55,31 +55,28 @@ function questionTow(){
 }
 questionTow();
 
+//question three
 
+function quesionThree(){
 
-let age = prompt('do you think iam 10 years old?');
-
-age = age.toUpperCase();
-
-console.log(age);
-
-if (age === 'YES' || age === 'Y') {
-    alert('you are wrong, you should start counting');
-    score++;
-
-
-    //console.log('you celver');
-} else if (age === 'NO' || age === 'N') {
-
-    alert('you are celever');
-    //console.log('you are wrong');
-
-} else {
-
-    alert('please answer with only yes/y or no/n with no spaces');
-
+    let age = prompt('do you think iam 10 years old?');
+    age = age.toUpperCase();
+    // console.log(age)
+    if (age === 'YES' || age === 'Y') {
+        alert('you are wrong, you should start counting');
+        score++;
+        //console.log('you celver');
+    } else if (age === 'NO' || age === 'N') {
+    
+        alert('you are celever');
+        //console.log('you are wrong');
+    
+    } else {
+        alert('please answer with only yes/y or no/n with no spaces');
+    }
 }
-
+    
+quesionThree();
 
 
 
