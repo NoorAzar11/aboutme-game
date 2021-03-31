@@ -1,4 +1,5 @@
 'use strict';
+let score=0;
 
 let userName = prompt('could you tell me your name ?');
 alert('welcome to my  page ' + userName);
@@ -14,6 +15,7 @@ puzzle = puzzle.toLowerCase();
 if (puzzle === 'yes' || puzzle === 'y') {
 
     alert('your answer is ' + puzzle + '\n' + 'right , I\'m are puzzle master ');
+    score ++;
     //console.log('puzzle master');
 } else if (puzzle === 'no' || puzzle === 'n') {
     alert('get out of here');
@@ -32,6 +34,7 @@ travel = travel.toLowerCase();
 
 if (travel === 'yes' || travel === 'y') {
     alert('correct, you are awesome');
+    score++;
     //console.log('you are awesome');
 } else if (travel === 'no' || travel === 'n') {
 
@@ -53,6 +56,7 @@ console.log(age);
 
 if (age === 'YES' || age === 'Y') {
     alert('you are wrong, you should start counting');
+    score++;
 
 
     //console.log('you celver');
@@ -76,7 +80,10 @@ game = game.toLowerCase();
 
 if (game === 'yes' || game === 'y') {
 
+
     alert('your answer is ' + game + '\n' + 'correct , im a video game master ');
+    score++;
+
     //console.log('video game master');
 } else if (game === 'no' || game === 'n') {
     alert('get out of here, I really like Xbox');
@@ -94,7 +101,9 @@ let code = prompt('do I like coding?');
 code = code.toLocaleLowerCase();
 
 if (code === 'yes' || code === 'y') {
+    
     alert('your answer is ' + code + '\n' + 'correct, im really intersted');
+    score++;
 
     //console.log('programming master');
 
@@ -145,34 +154,40 @@ alert('Thanks for playing ' + userName);
 
 //6th question :
 
-let money=prompt('How much money do you have?' + '\n' + 'you have to guess between 1 to 10 '+ '\n' + 'you have 4 chances');
+alert('How much money do you have?' + '\n' + 'you have to guess between 1 to 10 '+ '\n' + 'you have 4 chances');
+let money=null;
 
-for(let i=0;i<3;i++){
+for(let i=0;i<4;i++){
+    money=prompt("guess number between 1 to 10");
+    money=parseInt(money);
+    
 
-console.log(score);
+//console.log(score);
     
     if(money===8){
        alert('you are right!');
-        score++;
-     console.log(score);
-      break;
+       score++;
+     //console.log(score);
+     break;
 
     }else if(money>8){
 
        alert(' Too high' + '\n' + 'Try again');
 
-        money=prompt('You have to guess between 1 and 10');
-
     }else if(money<8) {
 
        alert(' Too low' + '\n' + 'Try again');
 
-        money=prompt('You have to guess between 1 and 10');
+    } else { 
+        alert('You tried 4 time,so you falied ');
 
-    } else alert('You tried 4 time,so you falied ');{
+    } if(i===3){
+        alert("the right answer 8");
 
     }
-}  
+}
+ 
+
 
 
 //7th question 
@@ -182,21 +197,23 @@ let movie=['drama','action','animation','hollywood', 'bollywood','comedies','mus
 
 let attemps=6;
 
-for(let y=0;y<attemps.length;y++){
+for(let y=0;y<attemps;y++){
 
-    let guess= prompt('could you guess what my fav movie?! drama , action, or animation, hollywood ,bollywoord,comdies ,musicals ?');
+   let guess= prompt('could you guess what my fav movie?! drama , action, or animation, hollywood ,bollywoord,comdies ,musicals ?');
 
-    for (let j=0;j<movie.length;j++){
+   for (let j=0;j<movie.length;j++){
 
-        console.log(movie[j]);
+       console.log(movie[j]);
     
-    if(guess===movie[j]){
-        alert("you are right dude" + movie);
-        y=6;
-    }
+   if(guess===movie[j]){
+       alert("you are right dude" + movie);
+       score ++;
+       y=6;
+
+   }
     
-    }
-    //alert('Thanks for playing '  userName + '\n' +'Your score is '+ score+ );
+   }
+    alert('Thanks for playing ' + userName + '\n' +'Your score is '+ score );
 }
 
 
