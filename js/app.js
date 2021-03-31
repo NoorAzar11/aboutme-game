@@ -121,8 +121,6 @@ function questionFive(){
 questionFive();
 
 
-
-
 let coin = prompt('What has a head and a tail but no body?');
 
 coin = coin.toLowerCase();
@@ -155,39 +153,44 @@ if (fire === 'drink') {
 alert('Thanks for playing ' + userName);
 
 //6th question :
+function quesionSix(){
 
-alert('How much money do you have?' + '\n' + 'you have to guess between 1 to 10 '+ '\n' + 'you have 4 chances');
-let money=null;
 
-for(let i=0;i<4;i++){
-    money=prompt("guess number between 1 to 10");
-    money=parseInt(money);
+    alert('How much money do you have?' + '\n' + 'you have to guess between 1 to 10 '+ '\n' + 'you have 4 chances');
+    let money=null;
     
-
-//console.log(score);
+    for(let i=0;i<4;i++){
+        money=prompt("guess number between 1 to 10");
+        money=parseInt(money);
+        
     
-    if(money===8){
-       alert('you are right!');
-       score++;
-     //console.log(score);
-     break;
-
-    }else if(money>8){
-
-       alert(' Too high' + '\n' + 'Try again');
-
-    }else if(money<8) {
-
-       alert(' Too low' + '\n' + 'Try again');
-
-    } else { 
-        alert('You tried 4 time,so you falied ');
-
-    } if(i===3){
-        alert("the right answer 8");
-
+    //console.log(score);
+        
+        if(money===8){
+           alert('you are right!');
+           score++;
+         //console.log(score);
+         break;
+    
+        }else if(money>8){
+    
+           alert(' Too high' + '\n' + 'Try again');
+    
+        }else if(money<8) {
+    
+           alert(' Too low' + '\n' + 'Try again');
+    
+        } else { 
+            alert('You tried 4 time,so you falied ');
+    
+        } if(i===3){
+            alert("the right answer 8");
+    
+        }
     }
 }
+quesionSix();
+
  
 
 
