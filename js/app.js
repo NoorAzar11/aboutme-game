@@ -29,27 +29,32 @@ if (puzzle === 'yes' || puzzle === 'y') {
 
 }
 }
-
 quesionOne();
 
-let travel = prompt('do I like Traveling?');
+//question two
+function questionTow(){
 
-travel = travel.toLowerCase();
-
-if (travel === 'yes' || travel === 'y') {
-    alert('correct, you are awesome');
-    score++;
-    //console.log('you are awesome');
-} else if (travel === 'no' || travel === 'n') {
-
-    alert('you should try travling');
-    //console.log('you should try traveling');
-
-} else {
-
-    alert('please answer with only yes/y or no/n with no spaces');
-
+    let travel = prompt('do I like Traveling?');
+    
+    travel = travel.toLowerCase();
+    
+    if (travel === 'yes' || travel === 'y') {
+        alert('correct, you are awesome');
+        score++;
+        //console.log('you are awesome');
+    } else if (travel === 'no' || travel === 'n') {
+    
+        alert('you should try travling');
+        //console.log('you should try traveling');
+    
+    } else {
+    
+        alert('please answer with only yes/y or no/n with no spaces');
+    
+    }
 }
+questionTow();
+
 
 
 let age = prompt('do you think iam 10 years old?');
