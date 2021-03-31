@@ -78,27 +78,28 @@ function quesionThree(){
     
 quesionThree();
 
+// question four
+
+function questionFour(){
 
 
-let game = prompt('do I like video games?');
-
-game = game.toLowerCase();
-
-if (game === 'yes' || game === 'y') {
-
-
-    alert('your answer is ' + game + '\n' + 'correct , im a video game master ');
-    score++;
-
-    //console.log('video game master');
-} else if (game === 'no' || game === 'n') {
-    alert('get out of here, I really like Xbox');
-    //console.log('just give a try');
-
-} else {
-    alert('please answer with only yes/y or no/n with no spaces');
-
+    
+    let game = prompt('do I like video games?');
+    
+    game = game.toLowerCase();
+    
+    if (game === 'yes' || game === 'y') {
+        alert('your answer is ' + game + '\n' + 'correct , im a video game master ');
+        score++;
+        //console.log('video game master');
+    } else if (game === 'no' || game === 'n') {
+        alert('get out of here, I really like Xbox');
+        //console.log('just give a try');
+    } else {
+        alert('please answer with only yes/y or no/n with no spaces');
+    }
 }
+questionFour();
 
 
 
