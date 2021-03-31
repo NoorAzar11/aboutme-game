@@ -1,4 +1,5 @@
 'use strict';
+
 let score=0;
 
 let userName = prompt('could you tell me your name ?');
@@ -6,10 +7,11 @@ alert('welcome to my  page ' + userName);
 
 confirm('please answers qustions below y/yes or no/n');
 
-
+// quesion one 
+function quesionOne() {
+    
 let puzzle = prompt('do I like puzzle?');
 // YES Yes yEs
-
 puzzle = puzzle.toLowerCase();
 
 if (puzzle === 'yes' || puzzle === 'y') {
@@ -26,7 +28,9 @@ if (puzzle === 'yes' || puzzle === 'y') {
     alert('please answer with only yes/y or no/n with no spaces');
 
 }
+}
 
+quesionOne();
 
 let travel = prompt('do I like Traveling?');
 
