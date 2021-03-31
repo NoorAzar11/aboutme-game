@@ -145,9 +145,6 @@ alert('Thanks for playing ' + userName);
 
 //6th question :
 
-
-
-
 let money=prompt('How much money do you have?' + '\n' + 'you have to guess between 1 to 10 '+ '\n' + 'you have 4 chances');
 
 for(let i=0;i<3;i++){
@@ -185,7 +182,7 @@ let movie=['drama','action','animation','hollywood', 'bollywood','comedies','mus
 
 let attemps=6;
 
-for(let y=0;y<attemps;y++){
+for(let y=0;y<attemps.length;y++){
 
     let guess= prompt('could you guess what my fav movie?! drama , action, or animation, hollywood ,bollywoord,comdies ,musicals ?');
 
