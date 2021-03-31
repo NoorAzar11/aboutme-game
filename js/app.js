@@ -101,29 +101,24 @@ function questionFour(){
 }
 questionFour();
 
+//quesion five
 
-
-let code = prompt('do I like coding?');
-
-code = code.toLocaleLowerCase();
-
-if (code === 'yes' || code === 'y') {
+function questionFive(){
+    let code = prompt('do I like coding?');
+    code = code.toLocaleLowerCase();
+    if (code === 'yes' || code === 'y') {
+        alert('your answer is ' + code + '\n' + 'correct, im really intersted');
+        score++;
+        //console.log('programming master');
+    } else if (code === 'no' || code === 'n') {
+        alert('wrong, I like coding');
+        //console.log('you will change your mind');
     
-    alert('your answer is ' + code + '\n' + 'correct, im really intersted');
-    score++;
-
-    //console.log('programming master');
-
-} else if (code === 'no' || code === 'n') {
-
-    alert('wrong, I like coding');
-    //console.log('you will change your mind');
-
-} else {
-    alert('please answer with only yes/y or no/n with no spaces');
-
+    } else {
+        alert('please answer with only yes/y or no/n with no spaces');
+    }
 }
-
+questionFive();
 
 
 
