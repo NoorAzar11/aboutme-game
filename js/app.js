@@ -191,34 +191,35 @@ function quesionSix(){
 }
 quesionSix();
 
- 
-
-
-
 //7th question 
-let guess=null;
+function quesionSeven(){
 
-let movie=['drama','action','animation','hollywood', 'bollywood','comedies','musicals'];
 
-let attemps=6;
-
-for(let y=0;y<attemps;y++){
-
-   let guess= prompt('could you guess what my fav movie?! drama , action, or animation, hollywood ,bollywoord,comdies ,musicals ?');
-
-   for (let j=0;j<movie.length;j++){
-
-       console.log(movie[j]);
+    let guess=null;
     
-   if(guess===movie[j]){
-       alert("you are right dude" + movie);
-       score ++;
-       y=6;
-
-   }
+    let movie=['drama','action','animation','hollywood', 'bollywood','comedies','musicals'];
     
-   }
-    alert('Thanks for playing ' + userName + '\n' +'Your score is '+ score );
+    let attemps=6;
+    
+    for(let y=0;y<attemps;y++){
+    
+       let guess= prompt('could you guess what my fav movie?! drama , action, or animation, hollywood ,bollywoord,comdies ,musicals ?');
+    
+       for (let j=0;j<movie.length;j++){
+    
+           console.log(movie[j]);
+        
+       if(guess===movie[j]){
+           alert("you are right dude" + movie);
+           score ++;
+           y=6;
+    
+       }
+        
+       }
+    }
 }
+questionSeven();
 
 
+alert('Thanks for playing ' + userName + '\n' +'Your score is '+ score );
