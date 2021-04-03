@@ -18,10 +18,10 @@ if (puzzle === 'yes' || puzzle === 'y') {
 
     alert('your answer is ' + puzzle + '\n' + 'right , I\'m are puzzle master ');
     score ++;
-    //console.log('puzzle master');
+ 
 } else if (puzzle === 'no' || puzzle === 'n') {
     alert('get out of here');
-    //console.log('get out of here');
+ 
 
 } else {
 
@@ -41,11 +41,11 @@ function questionTow(){
     if (travel === 'yes' || travel === 'y') {
         alert('correct, you are awesome');
         score++;
-        //console.log('you are awesome');
+       
     } else if (travel === 'no' || travel === 'n') {
     
         alert('you should try travling');
-        //console.log('you should try traveling');
+       
     
     } else {
     
@@ -61,15 +61,14 @@ function quesionThree(){
 
     let age = prompt('do you think iam 10 years old?');
     age = age.toUpperCase();
-    // console.log(age)
+   
     if (age === 'YES' || age === 'Y') {
         alert('you are wrong, you should start counting');
         score++;
-        //console.log('you celver');
     } else if (age === 'NO' || age === 'N') {
     
         alert('you are celever');
-        //console.log('you are wrong');
+        
     
     } else {
         alert('please answer with only yes/y or no/n with no spaces');
@@ -91,10 +90,10 @@ function questionFour(){
     if (game === 'yes' || game === 'y') {
         alert('your answer is ' + game + '\n' + 'correct , im a video game master ');
         score++;
-        //console.log('video game master');
+      
     } else if (game === 'no' || game === 'n') {
         alert('get out of here, I really like Xbox');
-        //console.log('just give a try');
+      
     } else {
         alert('please answer with only yes/y or no/n with no spaces');
     }
@@ -109,10 +108,10 @@ function questionFive(){
     if (code === 'yes' || code === 'y') {
         alert('your answer is ' + code + '\n' + 'correct, im really intersted');
         score++;
-        //console.log('programming master');
+       
     } else if (code === 'no' || code === 'n') {
         alert('wrong, I like coding');
-        //console.log('you will change your mind');
+     
     
     } else {
         alert('please answer with only yes/y or no/n with no spaces');
@@ -127,10 +126,10 @@ coin = coin.toLowerCase();
 
 if (coin === 'coin') {
     alert('correct, your a genius');
-    // console.log('correct, your a genius');
+    
 } else {
     alert('its a coin');
-    // console.log('its a coin');
+    
 }
 
 
@@ -139,13 +138,13 @@ fire = fire.toLocaleLowerCase();
 
 if (fire === 'drink') {
     alert('you are getting close');
-    // console.log('you are getting close');
+    
 } else if (fire === 'die') {
     alert('almost there!');
-    // console.log('almost there!');
+    
 } else if (fire === 'fire') {
     alert('correct answer');
-    // console.log('correct answer');
+    
 } else {
     alert('its fire');
 }
@@ -164,12 +163,12 @@ function quesionSix(){
         money=parseInt(money);
         
     
-    //console.log(score);
+    
         
         if(money===8){
            alert('you are right!');
            score++;
-         //console.log(score);
+        
          break;
     
         }else if(money>8){
@@ -207,7 +206,7 @@ function quesionSeven(){
     
        for (let j=0;j<movie.length;j++){
     
-           console.log(movie[j]);
+           
         
        if(guess===movie[j]){
            alert("you are right dude" + movie);

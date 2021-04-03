@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+body{
+    background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+   .navbar ul{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+ .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position:relative;
+
+}
+
+ .navbar ul li::after{
+    content: '';
+    height: 30px;
+    width: 100%;
+    background:#009688;
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+
+h1{
+    
+    font-size: 500%;
+    text-align: center;
+    color:#0b0711c0;
+    position: relative;
+    
+}
+
+h2{
+    font-size: 200%;
+    text-align: center;
+    color: rgb(7, 3, 1);
+    position:relative;
+}
+
+h3{
+    font-size: 200%;
+    color: rgb(43, 1, 44);
+    position: relative;
+}
+
+p{
+    font-size: 150%;
+    text-transform: none;
+    color:rgb(15, 12, 15); 
+    position: relative;
+}
+
+h4{
+    font-size: 200%;
+    text-transform: none;
+    color:rgb(7, 0, 7); 
+    position: relative;
+}
+
+ul{
+    font-size: 150%;
+    color: black;
+
+}
+
+h5{
+    font-size: 200%;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar3 ol {
+    font-size: 150%;
+    color: black;
+    font-weight: bold;
+}
+
+h6{
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.navbar4 ul{
+    font-weight: bold;
+    font-size: 150%;
+    color: black;
+}
